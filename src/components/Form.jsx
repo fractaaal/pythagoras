@@ -22,7 +22,7 @@ const Form = (props) => {
             <TextField name="s" label="sを入力" variant="outlined" onChange={props.handleChange}/>
             <TextField name="t" label="tを入力" variant="outlined" onChange={props.handleChange}/>
             <Button variant="contained" color="primary" href="#contained-buttons" onClick = {props.calculate}>
-                Link
+                CREATE
             </Button>
         </form>
 
