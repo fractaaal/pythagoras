@@ -1,1 +1,0 @@
-[こちら](https://fractaaal.github.io/pythagoras/)からお試しできます。
