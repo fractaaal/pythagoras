@@ -1,8 +1,9 @@
 import React from 'react'
 import Form from './components/Form'
+import Length from './components/Length'
 import Triangle from './components/Triangle'
-import './App.css';
-import Length from './components/Length';
+import './App.css'
+
 
 class App extends React.Component {
   constructor(props){
@@ -17,17 +18,22 @@ class App extends React.Component {
 
     this.handleChange = this.handleChange.bind(this)
     this.calculate = this.calculate.bind(this)
-
   }
 
   handleChange = (event) => {
     this.setState({
-      [event.target.name]:Number(event.target.value)
+      [event.target.name]:parseInt(event.target.value,10)
     })
   }
 
   calculate = (event) => {
     const reg = new RegExp(/^[0-9]*$/)
+    const gcd = (p,q) => {
+      if (q === 0){
+        return p
+      }
+      return gcd(q, p%q)
+    }
 
     switch(true){
       case(this.state.s<1||this.state.t<1):
@@ -48,6 +54,9 @@ class App extends React.Component {
       case((this.state.t%2) === 0):
         alert('tが偶数になってます!')
         break;
+      case(gcd(this.state.t,this.state.s)!==1):
+        alert('sとtが互いに素ではありません!')
+        break;
 
       default:
         this.setState({
@@ -57,14 +66,10 @@ class App extends React.Component {
         })
         break;
     }
-
-
     event.preventDefault()
   }
 
   render(){
-    console.log(this.state.s,this.state.t)
-
     return(
       <div>
         <h3>互いに素な奇数s,tを入力してください (1≦s≦t)</h3>

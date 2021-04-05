@@ -12,7 +12,6 @@ const Triangle = (props) => {
 
     return(
         <animated.div style={useStyle}></animated.div>
-
     )
 }
 
