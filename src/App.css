@@ -28,9 +28,17 @@
   color: #61dafb;
 }
 
-h3{
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue;
+}
+
+h3,p{
   margin-left: 10px;
 }
+
 
 @keyframes App-logo-spin {
   from {

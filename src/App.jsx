@@ -24,9 +24,10 @@ class App extends React.Component {
     this.setState({
       [event.target.name]:parseInt(event.target.value,10)
     })
+    event.preventDefault()
   }
 
-  calculate = (event) => {
+  calculate = () => {
     const reg = new RegExp(/^[0-9]*$/)
     const gcd = (p,q) => {
       if (q === 0){
@@ -42,8 +43,8 @@ class App extends React.Component {
       case(!(reg.test(this.state.s))||!(reg.test(this.state.t))):
         alert('sとtは半角数字で入力してください!')
         break;
-      case(this.state.s>this.state.t):
-        alert('sはt以下にしてください!')
+      case(this.state.s>=this.state.t):
+        alert('sはtより小さくしてください!')
         break;
       case((this.state.s%2) === 0 && (this.state.t%2) === 0):
         alert('sとtが偶数になってます!')
@@ -66,13 +67,12 @@ class App extends React.Component {
         })
         break;
     }
-    event.preventDefault()
   }
 
   render(){
     return(
       <div>
-        <h3>互いに素な奇数s,tを入力してください (1≦s≦t)</h3>
+        <h3>互いに素な奇数s,tを入力してください(1≦s＜t)</h3>
         <Form handleChange={this.handleChange} calculate={this.calculate} />
         <Length a={this.state.a} b={this.state.b} c={this.state.c}/>
         <Triangle a={this.state.a} b={this.state.b}/>

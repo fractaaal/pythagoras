@@ -17,7 +17,6 @@ const Form = (props) => {
     const classes = useStyles();
 
     return(
-        <div>
         <form className={classes.root} noValidate autoComplete="off">
             <TextField name="s" label="sを入力" variant="outlined" onChange={props.handleChange}/>
             <TextField name="t" label="tを入力" variant="outlined" onChange={props.handleChange}/>
@@ -25,10 +24,6 @@ const Form = (props) => {
                 CREATE
             </Button>
         </form>
-
-
-        </div>
-
     )
 }
 
