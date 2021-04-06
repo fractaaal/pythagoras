@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pythagoras/static/css/main.bb64aa6f.chunk.css",
-    "main.js": "/pythagoras/static/js/main.4e2d960d.chunk.js",
-    "main.js.map": "/pythagoras/static/js/main.4e2d960d.chunk.js.map",
+    "main.css": "/pythagoras/static/css/main.9cd2f030.chunk.css",
+    "main.js": "/pythagoras/static/js/main.41f6c57e.chunk.js",
+    "main.js.map": "/pythagoras/static/js/main.41f6c57e.chunk.js.map",
     "runtime-main.js": "/pythagoras/static/js/runtime-main.416768b4.js",
     "runtime-main.js.map": "/pythagoras/static/js/runtime-main.416768b4.js.map",
     "static/js/2.5d451a6f.chunk.js": "/pythagoras/static/js/2.5d451a6f.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.94441c6a.chunk.js": "/pythagoras/static/js/3.94441c6a.chunk.js",
     "static/js/3.94441c6a.chunk.js.map": "/pythagoras/static/js/3.94441c6a.chunk.js.map",
     "index.html": "/pythagoras/index.html",
-    "static/css/main.bb64aa6f.chunk.css.map": "/pythagoras/static/css/main.bb64aa6f.chunk.css.map",
+    "static/css/main.9cd2f030.chunk.css.map": "/pythagoras/static/css/main.9cd2f030.chunk.css.map",
     "static/js/2.5d451a6f.chunk.js.LICENSE.txt": "/pythagoras/static/js/2.5d451a6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.416768b4.js",
     "static/js/2.5d451a6f.chunk.js",
-    "static/css/main.bb64aa6f.chunk.css",
-    "static/js/main.4e2d960d.chunk.js"
+    "static/css/main.9cd2f030.chunk.css",
+    "static/js/main.41f6c57e.chunk.js"
   ]
 }
